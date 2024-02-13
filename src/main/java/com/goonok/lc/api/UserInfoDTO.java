@@ -2,8 +2,8 @@ package com.goonok.lc.api;
 
 public class UserInfoDTO {
 
-	private String userName;
-	private String crushName;
+	private String userName = "Md. Alamin";
+	private String crushName = "Tamalika Toma";
 
 	public String getUserName() {
 		return userName;

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,15 +27,15 @@ form {
 	<h1 align="center">Love Calculator</h1>
 	<hr>
 
-	<form action="processPage" method="post">
+	<form:form action="processPage" method="post" modelAttribute="userInfo">
 		<div align="center" class="name-section">
-			<label for="yourName">Your Name: </label> <input type="text"
-				id="yourName" name="userName" placeholder="Enter your name" /> <br>
-			<label for="crushName">Crush Name: </label> <input type="text"
-				id="crushName" name="crushName" placeholder="Enter Crush Name" /> <br>
+			<label for="yourName">Your Name: </label> 
+			<form:input id="yourName" path="userName" placeholder="Enter your name" /> <br>
+			<label for="crushName">Crush Name: </label> 
+			<form:input id="crushName" path="crushName" placeholder="Enter Crush Name" /> <br>
 			<input type="submit" value="Check Match" />
 		</div>
 
-	</form>
+	</form:form>
 </body>
 </html>

@@ -1,0 +1,5 @@
+com\goonok\controllers\TestController.class
+com\goonok\config\ApplicationConfig.class
+com\goonok\controllers\LCAppController.class
+com\goonok\lc\api\UserInfoDTO.class
+com\goonok\config\ApplicationInitialize2ndWay.class

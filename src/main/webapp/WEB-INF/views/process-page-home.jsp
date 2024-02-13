@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,6 +13,11 @@
 </style>
 </head>
 <body>
-	<h2><span>${userInfoDTO.userName}</span> and <span>${userInfoDTO.crushName}</span> has love matching with a 100% love match..</h2>
+	<h1 align="center">Love Calculator</h1>
+	<hr>
+	<div align="center">
+		<p>Your name: <span>${userInfoDTO.userName}</span></p>
+		<p>Crush name: <span>${userInfoDTO.crushName}</span></p>
+	</div>
 </body>
 </html>

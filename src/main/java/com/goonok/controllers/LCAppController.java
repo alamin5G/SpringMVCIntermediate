@@ -11,7 +11,9 @@ import com.goonok.lc.api.UserInfoDTO;
 public class LCAppController {
 	
 	@RequestMapping("/")
-	public String showHomePage() {
+	public String showHomePage(Model model) {
+		UserInfoDTO userInfoDTO = new UserInfoDTO();
+		model.addAttribute("userInfo", userInfoDTO);
 		return "home-page";
 	}
 	
