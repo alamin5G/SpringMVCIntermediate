@@ -26,6 +26,13 @@ form {
 <body>
 	<h1 align="center">Love Calculator</h1>
 	<hr>
+	
+	  <table align="center" style="width: 100%;">
+        <tr>
+            <td colspan="2" align="center"><h2><a href="register">Register</a></h2></td>
+            <td colspan="2" align="center"> <h2><a href="login">Login Here</a></h2></td>
+        </tr>
+    </table>
 
 	<form:form action="processPage" method="post" modelAttribute="userInfo">
 		<div align="center" class="name-section">
