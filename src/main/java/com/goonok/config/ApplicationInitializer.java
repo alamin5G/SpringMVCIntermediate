@@ -7,6 +7,10 @@ import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
+//we can keep use the different initializer to run one config file within different url
+
+
+/*
 public class ApplicationInitializer implements WebApplicationInitializer {
 
 	@Override
@@ -27,4 +31,4 @@ public class ApplicationInitializer implements WebApplicationInitializer {
 		
 	}
 
-}
+}*/
