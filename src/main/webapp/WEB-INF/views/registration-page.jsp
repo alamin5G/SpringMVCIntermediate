@@ -28,41 +28,41 @@
                     <td><form:input path="password" type="password" placeholder="enter password"/></td>
                 </tr>
                 <tr>
-                    <%-- <td><form:label path="country">Select Country:</form:label></td>
+                    <td><form:label path="country">Select Country:</form:label></td>
                     <td>
                         <form:select path="country">
                             <option value="blank">Country</option>
-                            <option value="arg">Argentina</option>
-                            <option value="ban">Bangladesh</option>
-                            <option value="bhu">Bhutan</option>
-                            <option value="ind">India</option>
-                            <option value="mal">Maldive</option>
-                            <option value="nep">Nepal</option>
-                            <option value="pak">Pakistan</option>
-                            <option value="sri">Srilanka</option>
+                            <option value="arg" label="Argentina"></option>
+                            <option value="ban" label="Bangladesh"></option>
+                            <option value="bhu" label="Bhutan"></option>
+                            <option value="ind" label="India"></option>
+                            <option value="mal" label="Maldives"></option>
+                            <option value="nep" label="Nepal"></option>
+                            <option value="pak" label="Pakistan"></option>
+                            <option value="sri" label="Srilanka"></option>
                         </form:select>
                     </td>
                 </tr>
                 <tr>
-                    <td><p>Enter your Hobbies: </p></td>
+                    <td><label>Enter your Hobbies: </label></td>
                     <td>
-                        <form:input type="checkbox" path="cricket"/>
-                        <form:label path="cricket">Cricket</form:label>
-                        <form:input type="checkbox" path="reading"/>
-                        <form:label path="reading">Reading</form:label>
-                        <form:input type="checkbox" path="travel"/>
-                        <form:label path="travel">Travel</form:label>
+                        <form:checkbox value="cricket" path="hobbies" id="cricket"/>
+                        <label for="cricket">Cricket</label>
+                        <form:checkbox value="reading" path="hobbies" id="reading"/>
+                        <label for="reading">Reading</label>
+                        <form:checkbox value="travel" path="hobbies" id="travel"/>
+                        <label for="travel">Travel</label>
                     </td>
                 </tr>
                 <tr>
-                    <td><p>Your Gender: </p></td>
+                    <td><label>Your Gender: </label></td>
                     <td>
-                        <form:input type="radio" path="gender" value="male"/>
-                        <form:label path="gender">Male</form:label>
-                        <form:input type="radio" path="gender" value="female"/>
-                        <form:label path="gender">Female</form:label>
+                        <form:radiobutton path="gender" value="male" id="male"/>
+                        <label for="male">Male</label>
+                        <form:radiobutton path="gender" value="female" id="female"/>
+                        <label for="female">Female</label>
                     </td>
-                </tr> --%>
+                </tr>
                 <tr>
                     <td colspan="2" align="center"><input type="submit" value="Register"/></td>
                 </tr>

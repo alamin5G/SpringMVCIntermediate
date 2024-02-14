@@ -4,13 +4,9 @@ public class RegistrationDTO {
 	private String userName;
 	private String yourName;
 	private char[] password;
-	
-	public RegistrationDTO(String userName, String yourName, char[] password) {
-		super();
-		this.userName = userName;
-		this.yourName = yourName;
-		this.password = password;
-	}
+	private String country;
+	private String[] hobbies;
+	private String gender;
 
 	public String getUserName() {
 		return userName;
@@ -36,6 +32,31 @@ public class RegistrationDTO {
 		this.password = password;
 	}
 
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	public String[] getHobbies() {
+		return hobbies;
+	}
+
+	public void setHobbies(String[] hobbies) {
+		this.hobbies = hobbies;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	
 	
 
 }
