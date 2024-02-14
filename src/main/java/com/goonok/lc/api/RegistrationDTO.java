@@ -3,9 +3,9 @@ package com.goonok.lc.api;
 public class RegistrationDTO {
 	private String userName;
 	private String yourName;
-	private String password;
+	private char[] password;
 	
-	public RegistrationDTO(String userName, String yourName, String password) {
+	public RegistrationDTO(String userName, String yourName, char[] password) {
 		super();
 		this.userName = userName;
 		this.yourName = yourName;
@@ -28,12 +28,14 @@ public class RegistrationDTO {
 		this.yourName = yourName;
 	}
 
-	public String getPassword() {
+	public char[] getPassword() {
 		return password;
 	}
 
-	public void setPassword(String password) {
+	public void setPassword(char[] password) {
 		this.password = password;
 	}
+
+	
 
 }

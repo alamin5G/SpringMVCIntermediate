@@ -12,7 +12,7 @@
     <hr>
     <marquee behavior="" direction="right">Please, complete your Registration to get your best match here.</marquee>
     <div align="center">
-        <form:form action="login" method="post" modelAttribute="registrationDTO">
+        <form:form action="login" method="post" modelAttribute="userRegistration">
 
             <table>
                 <tr>
@@ -28,7 +28,7 @@
                     <td><form:input path="password" type="password" placeholder="enter password"/></td>
                 </tr>
                 <tr>
-                    <td><form:label path="country">Select Country:</form:label></td>
+                    <%-- <td><form:label path="country">Select Country:</form:label></td>
                     <td>
                         <form:select path="country">
                             <option value="blank">Country</option>
@@ -62,7 +62,7 @@
                         <form:input type="radio" path="gender" value="female"/>
                         <form:label path="gender">Female</form:label>
                     </td>
-                </tr>
+                </tr> --%>
                 <tr>
                     <td colspan="2" align="center"><input type="submit" value="Register"/></td>
                 </tr>
