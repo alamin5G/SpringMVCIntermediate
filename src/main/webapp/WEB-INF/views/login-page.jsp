@@ -10,19 +10,24 @@
 <title>Welcome to Love Calculator</title>
 </head>
 <body>
-	<p>user name : ${registrationDTO.userName}</p>
-	<p>Your name : ${registrationDTO.yourName}</p>
-	<p>Your Password: ${registrationDTO.password }</p>
-	<p>Your Country : ${registrationDTO.country}</p>
+	<p>user name : ${userRegistration.userName}</p>
+	<p>Your name : ${userRegistration.yourName}</p>
+	<p>Your Password: ${userRegistration.password }</p>
+	<p>Your Country : ${userRegistration.country}</p>
 
 	<p>
 		Your Hobbies :
-		<c:forEach var="temp" items="${registrationDTO.hobbies }">
+		<c:forEach var="temp" items="${userRegistration.hobbies }">
 				${temp }, 
 				
 		</c:forEach>
 	</p>
 
-	<p>Your Gender : ${registrationDTO.gender }</p>
+	<p>Your Gender : ${userRegistration.gender }</p>
+	<hr>
+	<br>
+	<p>Email: ${userRegistration.communicationDTO.email }</p>
+	<br>
+	<%-- <p>Phone: ${userRegistration.communicationDTO.phone }</p> --%>
 </body>
 </html>

@@ -6,22 +6,23 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Registration Page</title>
+
 </head>
 <body>
 	 <h1 align="center">Love Calculator App</h1>
     <hr>
     <marquee behavior="" direction="right">Please, complete your Registration to get your best match here.</marquee>
     <div align="center">
-        <form:form action="login" method="post" modelAttribute="userRegistration">
+        <form:form action="login" method="GET" modelAttribute="userRegistration">
 
             <table>
                 <tr>
                     <td><form:label path="userName">User name:</form:label></td>
-                    <td><form:input path="userName" placeholder="user123"/></td>
+                    <td><form:input path="userName" placeholder="user123" id="userName"/></td>
                 </tr>
                 <tr>
                     <td><form:label path="yourName">Your Name:</form:label></td>
-                    <td><form:input path="yourName" placeholder="Your Name"/></td>
+                    <td><form:input path="yourName" placeholder="Your Name" id="yourName"/></td>
                 </tr>
                 <tr>
                     <td><form:label path="password">Password</form:label></td>
@@ -63,6 +64,20 @@
                         <label for="female">Female</label>
                     </td>
                 </tr>
+                
+                <tr>
+                	<td colspan="2">
+                		<h1>Communication with Us</h1>
+                	</td>
+                </tr>
+                <tr>
+                	<td><form:label path="communicationDTO.email">Email</form:label></td>
+                	<td><form:input path="communicationDTO.email"/></td>
+                </tr>
+                <%-- <tr>
+                	<td><form:label path="communicationDTO.phone">Phone</form:label></td>
+                	<td><form:input path="communicationDTO.phone"/></td>
+                </tr> --%>
                 <tr>
                     <td colspan="2" align="center"><input type="submit" value="Register"/></td>
                 </tr>

@@ -1,8 +1,12 @@
 package com.goonok.lc.api;
 
+import javax.validation.constraints.NotBlank;
+
 public class UserInfoDTO {
 
-	private String userName = "Md. Alamin";
+	@NotBlank(message = " * Your name can't be blank")
+	private String userName;
+	
 	private String crushName = "Tamalika Toma";
 
 	public String getUserName() {

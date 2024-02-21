@@ -37,7 +37,9 @@ form {
 	<form:form action="processPage" method="post" modelAttribute="userInfo">
 		<div align="center" class="name-section">
 			<label for="yourName">Your Name: </label> 
-			<form:input id="yourName" path="userName" placeholder="Enter your name" /> <br>
+			<form:input id="yourName" path="userName" placeholder="Enter your name" />
+			<form:errors></form:errors>
+			 <br>
 			<label for="crushName">Crush Name: </label> 
 			<form:input id="crushName" path="crushName" placeholder="Enter Crush Name" /> <br>
 			<input type="submit" value="Check Match" />

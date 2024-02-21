@@ -1,12 +1,15 @@
 package com.goonok.lc.api;
 
 public class RegistrationDTO {
+	
 	private String userName;
 	private String yourName;
 	private char[] password;
 	private String country;
 	private String[] hobbies;
 	private String gender;
+	
+	private CommunicationDTO communicationDTO;
 
 	public String getUserName() {
 		return userName;
@@ -54,6 +57,14 @@ public class RegistrationDTO {
 
 	public void setGender(String gender) {
 		this.gender = gender;
+	}
+
+	public CommunicationDTO getCommunicationDTO() {
+		return communicationDTO;
+	}
+
+	public void setCommunicationDTO(CommunicationDTO communicationDTO) {
+		this.communicationDTO = communicationDTO;
 	}
 
 	

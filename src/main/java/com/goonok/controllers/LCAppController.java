@@ -1,10 +1,11 @@
 package com.goonok.controllers;
 
+import javax.validation.Valid;
+
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.goonok.lc.api.UserInfoDTO;
 
@@ -18,7 +19,11 @@ public class LCAppController {
 	}
 	
 	@RequestMapping("/processPage")
-	public String showProcessPage(@ModelAttribute("userInfoDTO") UserInfoDTO userInfoDTO) {
+	public String showProcessPage(@Valid @ModelAttribute("userInfoDTO") UserInfoDTO userInfoDTO, BindingResult result) {
+		
+		if(result.hasFieldErrors()) {
+			System.out.println("My form has error!");
+		}
 		
 		System.out.println("User name is: " + userInfoDTO.getUserName());
 		System.out.println("Crush name is : " + userInfoDTO.getCrushName());
